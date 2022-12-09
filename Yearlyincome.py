@@ -11,7 +11,7 @@ if yearly:
     print(f'Pay per month:${per_month} \nPay per week: ${per_week} \nPay per hour: ${per_hour} (Assuming 40 hours)')
 
 elif hourly:
-    hours = input('How many hours per week? ')
+    hours = float(input('How many hours per week? '))
     per_hour = int(income)
     per_week = int(per_hour) * int(hours)
     per_month = int(per_week) * 4
